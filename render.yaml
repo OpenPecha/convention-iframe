@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: convention-iframe
+    env: node
+    plan: starter
+    buildCommand: npm ci --production=false && npm run build && npm prune --production
+    startCommand: npm run start
+    autoDeploy: false
+    envVars:
+      - key: NODE_VERSION
+        value: ~16.14.2
+      - key: NODE_ENV
+        value: production
