@@ -3,7 +3,7 @@ export default function WelcomeMessage({ username, workSpace }) {
       <h3 className="mt-10 mb-2 text-4xl font-semibold text-white">
         {username && workSpace ? (
           <>
-            {username}! welcome
+            Hi, {username}! welcome to {workSpace}
           </>
         ) : (
           <>select the options</>
@@ -11,3 +11,4 @@ export default function WelcomeMessage({ username, workSpace }) {
       </h3>
     );
   }
+  
