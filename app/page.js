@@ -16,7 +16,7 @@ export default function Home({ searchParams }) {
         className="w-screen h-screen"
       />
       <Sidebar>
-        <WelcomeMessage />
+        <WelcomeMessage username={username} workSpace={workSpace} />
         <iframe className="h-full" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT5gDbwko0iKrR46GjJgsmMgGQXc6EiC9xBugl8BvV66pPz-czBeyO1DfVsti0jg-EJqTZ7dSUCu_qC/pubhtml?widget=true&amp;headers=false"></iframe>
       </Sidebar>
     </>
