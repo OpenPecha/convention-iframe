@@ -13,7 +13,8 @@ module.exports = {
           APP_ENV: 'dev' // APP_ENV=dev
         },
         env_production: {
-          APP_ENV: 'prod' // APP_ENV=prod
+          APP_ENV: 'prod',
+          PORT: 3001 //// APP_ENV=prod
         }
       }
     ]
