@@ -8,8 +8,8 @@ export default function Sidebar({ children }) {
     <>
       {showSidebar ? (
         <button
-          className="fixed z-50 flex items-center text-3xl text-white cursor-pointer right-10"
-          style={{ bottom: '22rem' }}
+          className="fixed z-50 flex items-center text-3xl text-white cursor-pointer right-5"
+          style={{ bottom: '22.5rem' }}
           onClick={() => setShowSidebar((prev) => !prev)}
         >
           ❌
