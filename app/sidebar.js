@@ -8,20 +8,13 @@ export default function Sidebar({ children }) {
     <>
       {showSidebar ? (
         <button
-          className="fixed z-50 flex items-center text-3xl text-white cursor-pointer right-5"
-          style={{ bottom: '22.5rem' }}
+          className="fixed z-50 flex items-center text-3xl text-white cursor-pointer right-5 bottom-1/2"
           onClick={() => setShowSidebar((prev) => !prev)}
         >
           ❌
         </button>
       ) : (
-        <div 
-          className="fixed z-50 flex items-center text-3xl text-white cursor-pointer right-10"
-          style={{ bottom: '22rem' }}
-          onClick={() => setShowSidebar(true)}
-        >
-          <BurgerIcon />
-        </div>
+        <BurgerIcon setShowSidebar={setShowSidebar} />
       )}
       <div
         className={`bottom-0 right-0 w-[90vw] md:w-[50vw] bg-[#54606e] md:p-5 p-1 text-white fixed h-[50vh] z-40 ease-in-out duration-300 ${
